@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtuous Vision</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+    :root {
+      --primary-color: #3a0ca3;
+      --secondary-color: #7209b7;
+      --accent-color: #f72585;
+      --light-bg: #f3e8ff;
+      --dark-bg: #1e1e2f;
+      --font-family: 'Montserrat', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: white;
+      color: #333;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    nav {
+      background: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--accent-color);
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: var(--dark-bg);
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Virtuous Vision</h1>
+    <p>Modern İç Giyim | Özgün Tasarım | Estetik Detay</p>
+  </header>
+
+  <nav>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#urunler">Ürünler</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#iletisim">İletişim</a>
+    <a href="#siparis">Online Sipariş</a>
+  </nav>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>
+      Virtuous Vision, modern çizgiler ve zarif detaylarıyla iç giyimde fark yaratmak isteyenler için kuruldu.
+      Kaliteli kumaş, şık tasarım ve özgün tarzı bir araya getirerek stilinize katkı sağlıyoruz.
+    </p>
+  </section>
+
+  <section id="urunler">
+    <h2>Ürünler</h2>
+    <p>
+      Yeni koleksiyonumuzda yer alan boxer, bralet ve loungewear ürünleri yakında burada olacak!
+    </p>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Boxer+1" alt="Boxer 1">
+      <img src="https://via.placeholder.com/300x400?text=Boxer+2" alt="Boxer 2">
+      <img src="https://via.placeholder.com/300x400?text=Detay" alt="Detay">
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bize ulaşmak için e-posta: <a href="mailto:info@virtuousvision.com">info@virtuousvision.com</a></p>
+  </section>
+
+  <section id="siparis">
+    <h2>Online Sipariş</h2>
+    <p>Çok yakında online mağazamızdan sipariş verebileceksiniz!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Virtuous Vision. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
